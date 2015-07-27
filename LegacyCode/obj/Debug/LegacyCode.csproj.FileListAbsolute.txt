@@ -1,0 +1,9 @@
+C:\projects\LegacyCode\LegacyCode\LegacyCode\bin\Debug\LegacyCode.exe.config
+C:\projects\LegacyCode\LegacyCode\LegacyCode\bin\Debug\LegacyCode.exe
+C:\projects\LegacyCode\LegacyCode\LegacyCode\bin\Debug\LegacyCode.pdb
+C:\projects\LegacyCode\LegacyCode\LegacyCode\obj\Debug\LegacyCode.csprojResolveAssemblyReference.cache
+C:\projects\LegacyCode\LegacyCode\LegacyCode\obj\Debug\LegacyCode.exe
+C:\projects\LegacyCode\LegacyCode\LegacyCode\obj\Debug\LegacyCode.pdb
+C:\projects\LegacyCode\LegacyCode\bin\Debug\LegacyCode.exe.config
+C:\projects\LegacyCode\LegacyCode\obj\Debug\LegacyCode.exe
+C:\projects\LegacyCode\LegacyCode\obj\Debug\LegacyCode.pdb
