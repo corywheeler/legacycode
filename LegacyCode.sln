@@ -12,6 +12,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{AA11E2
 		.nuget\packages.config = .nuget\packages.config
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter.8", "ClassLibrary1\Chapter.8.csproj", "{BCB354D1-FC2E-4FE4-A14F-A48617EE9DD3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter.8.Unmodified", "Chapter.8.Unmodified\Chapter.8.Unmodified.csproj", "{760060D1-0638-4817-A5F9-AF70E8B4A7D7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +30,14 @@ Global
 		{6D7BFE4F-6A3B-42F7-BA63-1A56C85B14C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D7BFE4F-6A3B-42F7-BA63-1A56C85B14C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D7BFE4F-6A3B-42F7-BA63-1A56C85B14C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BCB354D1-FC2E-4FE4-A14F-A48617EE9DD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCB354D1-FC2E-4FE4-A14F-A48617EE9DD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCB354D1-FC2E-4FE4-A14F-A48617EE9DD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCB354D1-FC2E-4FE4-A14F-A48617EE9DD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{760060D1-0638-4817-A5F9-AF70E8B4A7D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{760060D1-0638-4817-A5F9-AF70E8B4A7D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{760060D1-0638-4817-A5F9-AF70E8B4A7D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{760060D1-0638-4817-A5F9-AF70E8B4A7D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

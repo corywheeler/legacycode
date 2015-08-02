@@ -1,0 +1,5 @@
+C:\projects\LegacyCode\ClassLibrary1\bin\Debug\Chapter.8.dll
+C:\projects\LegacyCode\ClassLibrary1\bin\Debug\Chapter.8.pdb
+C:\projects\LegacyCode\ClassLibrary1\obj\Debug\Chapter.8.csprojResolveAssemblyReference.cache
+C:\projects\LegacyCode\ClassLibrary1\obj\Debug\Chapter.8.dll
+C:\projects\LegacyCode\ClassLibrary1\obj\Debug\Chapter.8.pdb
