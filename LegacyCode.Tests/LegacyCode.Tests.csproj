@@ -50,7 +50,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary1\Chapter.8.csproj">
+    <ProjectReference Include="..\Chapter.8\Chapter.8.csproj">
       <Project>{BCB354D1-FC2E-4FE4-A14F-A48617EE9DD3}</Project>
       <Name>Chapter.8</Name>
     </ProjectReference>

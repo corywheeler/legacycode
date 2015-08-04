@@ -12,7 +12,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{AA11E2
 		.nuget\packages.config = .nuget\packages.config
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter.8", "ClassLibrary1\Chapter.8.csproj", "{BCB354D1-FC2E-4FE4-A14F-A48617EE9DD3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter.8", "Chapter.8\Chapter.8.csproj", "{BCB354D1-FC2E-4FE4-A14F-A48617EE9DD3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter.8.Unmodified", "Chapter.8.Unmodified\Chapter.8.Unmodified.csproj", "{760060D1-0638-4817-A5F9-AF70E8B4A7D7}"
 EndProject
