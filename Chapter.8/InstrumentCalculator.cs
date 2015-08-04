@@ -17,7 +17,9 @@ namespace Chapter._8
 
 		public double firstMomentAbout(double point)
 		{
-			return Double.NaN;
+			double numerator = 0.0;
+			elements.ForEach(element => numerator += element - point);
+			return numerator / elements.Count;
 		}
 
 		public void addElement(double element)
