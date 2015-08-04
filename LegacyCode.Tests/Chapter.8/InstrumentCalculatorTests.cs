@@ -22,7 +22,6 @@ namespace LegacyCode.Tests.Chapter._8
 
 			double TOLERANCE = 0;
 			Assert.AreEqual(-0.5, calculator.firstMomentAbout(2.0), TOLERANCE);
-
 		}
 
 
