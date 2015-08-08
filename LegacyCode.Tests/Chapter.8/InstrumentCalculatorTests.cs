@@ -1,8 +1,6 @@
-﻿using System;
-using Chapter._8;
+﻿using Chapter._8;
 using Chapter._8.Exceptions;
 using NUnit.Framework;
-using NUnit.Framework.Constraints;
 
 namespace LegacyCode.Tests.Chapter._8
 {
