@@ -18,14 +18,7 @@ namespace Chapter._8
 
 		public double firstMomentAbout(double point)
 		{
-			if (elements.Count == 0)
-			{
-				throw new InvalidBasisException();
-			}
-
-			double numerator = 0.0;
-			elements.ForEach(element => numerator += element - point);
-			return numerator / elements.Count;
+			return nthMomentAbout(point, 1.0);
 		}
 
 		public void addElement(double element)
@@ -35,14 +28,19 @@ namespace Chapter._8
 
 		public double secondMomentAbout(double point)
 		{
+			return nthMomentAbout(point, 2.0);
+		}
+
+		private double nthMomentAbout(double point, double n)
+		{
 			if (elements.Count == 0)
 			{
 				throw new InvalidBasisException();
 			}
 
 			double numerator = 0.0;
-			elements.ForEach(element => numerator += Math.Pow(element - point, 2.0));
-			return numerator / elements.Count;
+			elements.ForEach(element => numerator += Math.Pow(element - point, n));
+			return numerator/elements.Count;
 		}
 	}
 
