@@ -33,5 +33,17 @@ namespace LegacyCode.Tests.Chapter._8
 
 		}
 
+		[Test]
+		public void testSecondMomentAbout()
+		{
+			const double TOLERANCE = 0.0;
+
+			InstrumentCalculator calculator = new InstrumentCalculator();
+			calculator.addElement(1.0);
+			calculator.addElement(2.0);
+
+			Assert.AreEqual(0.5, calculator.secondMomentAbout(2.0), TOLERANCE);
+		}
+
 	}
 }

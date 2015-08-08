@@ -32,6 +32,18 @@ namespace Chapter._8
 		{
 			elements.Add(element);
 		}
+
+		public double secondMomentAbout(double point)
+		{
+			if (elements.Count == 0)
+			{
+				throw new InvalidBasisException();
+			}
+
+			double numerator = 0.0;
+			elements.ForEach(element => numerator += Math.Pow(element - point, 2.0));
+			return numerator / elements.Count;
+		}
 	}
 
 }
