@@ -23,11 +23,6 @@ namespace Chapter._8
 			return new InternetAddress(GetDefaultFrom());
 		}
 
-		private string GetDefaultFrom()
-		{
-			return string.Empty;
-		}
-
 		public void ForwardMessage(Message message)
 		{
 			string session = String.Empty;
@@ -35,6 +30,13 @@ namespace Chapter._8
 			forward.SetFrom(GetFromAddress(message));
 			forward.Send();
 		}
+		
+		private string GetDefaultFrom()
+		{
+			return string.Empty;
+		}
+
+		
 
 		public string GetDomain()
 		{
