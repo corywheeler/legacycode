@@ -12,5 +12,15 @@
 		{
 			_getFromAddress = getFromAddress;
 		}
+
+		public InternetAddress GetFrom()
+		{
+			return _getFromAddress;
+		}
+
+		public void Send()
+		{
+			
+		}
 	}
 }

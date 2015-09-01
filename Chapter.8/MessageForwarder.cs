@@ -7,12 +7,12 @@ namespace Chapter._8
 	{
 		private string _domain;
 
-		public MessageForwarder()
+		public MessageForwarder(string domain)
 		{
-			_domain = "shoptotrot.com";
+			_domain = domain;
 		}
 
-		private InternetAddress GetFromAddress(Message message)
+		protected virtual InternetAddress GetFromAddress(Message message)
 		{
 			Address[] from = message.GetFrom();
 			if (from != null && from.Any())
@@ -33,6 +33,7 @@ namespace Chapter._8
 			string session = String.Empty;
 			MimeMessage forward = new MimeMessage(session);
 			forward.SetFrom(GetFromAddress(message));
+			forward.Send();
 		}
 
 		public string GetDomain()

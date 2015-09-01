@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Address.cs" />
+    <Compile Include="AnonymousMessageForwarder.cs" />
     <Compile Include="Exceptions\InvalidBasisException.cs" />
     <Compile Include="InstrumentCalculator.cs" />
     <Compile Include="InternetAddress.cs" />

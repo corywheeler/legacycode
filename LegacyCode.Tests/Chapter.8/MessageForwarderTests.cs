@@ -1,4 +1,5 @@
-﻿using Chapter._8;
+﻿using System;
+using Chapter._8;
 using Chapter._8.Exceptions;
 using NUnit.Framework;
 
@@ -8,25 +9,32 @@ namespace LegacyCode.Tests.Chapter._8
 	public class MessageForwarderTests
 	{
 		private Message _expectedMessage;
+		private string _listAddress;
+		private string _domain;
 
 		[SetUp]
 		public void Init()
 		{
-			_expectedMessage = MakeFakeMessage();
+			_expectedMessage = new Message(new Address("anon-shoppers@shoptotrot.com"));
 		}
 
 		[Test]
 		public void testAnonymous()
 		{
-			MessageForwarder forwarder = new MessageForwarder();
+			_domain = "shoptotrot.com";
+			_listAddress = "shoppers";
+			
+			MessageForwarder forwarder = new AnonymousMessageForwarder(_domain, _listAddress);
 			forwarder.ForwardMessage(MakeFakeMessage());
+			Console.WriteLine(forwarder.GetDomain());
+			Console.WriteLine(_expectedMessage.GetFrom().GetValue(0).ToString());
 
-			Assert.AreEqual("anon-members@" + forwarder.GetDomain(), _expectedMessage.GetFrom().GetValue(0).ToString());
+			Assert.AreEqual(_expectedMessage.GetFrom().GetValue(0).ToString(), "anon-" + _listAddress + "@" + forwarder.GetDomain());
 		}
 
 		private Message MakeFakeMessage()
 		{
-			return new Message(new Address("cory@shoptotrot.com"));
+			return new Message(new Address("nobody@gmail.com"));
 		}
 	}
 }
