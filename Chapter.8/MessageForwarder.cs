@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Security.Policy;
 
 namespace Chapter._8
 {
@@ -29,6 +30,11 @@ namespace Chapter._8
 			MimeMessage forward = new MimeMessage(session);
 			forward.SetFrom(GetFromAddress(message));
 			forward.Send();
+		}
+
+		public void ProcessMessage(Message message)
+		{
+			// Do some work.
 		}
 		
 		private string GetDefaultFrom()
