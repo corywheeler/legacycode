@@ -6,7 +6,7 @@ using NUnit.Framework;
 namespace LegacyCode.Tests.Chapter._8
 {
 	[TestFixture]
-	public class MessageForwarderTests
+	public class AnonymouseMessageForwarderTests
 	{
 		private Message _expectedMessage;
 		private string _listAddress;
