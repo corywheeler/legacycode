@@ -5,22 +5,34 @@ namespace Chapter._8
 {
 	public class MessageForwarder
 	{
+		private readonly Properties _configuration;
 		private string _domain;
 
-		public MessageForwarder(string domain)
+		public MessageForwarder(Properties configuration, string domain)
 		{
+			_configuration = configuration;
 			_domain = domain;
 		}
 
 		protected virtual InternetAddress GetFromAddress(Message message)
 		{
-			Address[] from = message.GetFrom();
-			if (from != null && from.Any())
+			string fromAddress = GetDefaultFrom();
+
+			if (_configuration.GetProperty("anonymous") == "true")
 			{
-				return new InternetAddress(from.GetValue(0).ToString());
+				fromAddress = "anon-members@" + _domain;
+			}
+			else
+			{
+				Address[] from = message.GetFrom();
+				if (from != null && from.Any())
+				{
+					fromAddress = from.GetValue(0).ToString();
+				}
+				
 			}
 
-			return new InternetAddress(GetDefaultFrom());
+			return new InternetAddress(fromAddress);
 		}
 
 		public void ForwardMessage(Message message)
@@ -40,8 +52,6 @@ namespace Chapter._8
 		{
 			return string.Empty;
 		}
-
-		
 
 		public string GetDomain()
 		{

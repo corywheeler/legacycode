@@ -1,6 +1,5 @@
 ﻿using System;
 using Chapter._8;
-using Chapter._8.Exceptions;
 using NUnit.Framework;
 
 namespace LegacyCode.Tests.Chapter._8
@@ -23,8 +22,9 @@ namespace LegacyCode.Tests.Chapter._8
 		{
 			_domain = "shoptotrot.com";
 			_listAddress = "shoppers";
-			
-			MessageForwarder forwarder = new AnonymousMessageForwarder(_domain, _listAddress);
+
+			Properties configuration = new Properties();
+			MessageForwarder forwarder = new MessageForwarder(configuration, _domain);
 			forwarder.ForwardMessage(MakeFakeMessage());
 			Console.WriteLine(forwarder.GetDomain());
 			Console.WriteLine(_expectedMessage.GetFrom().GetValue(0).ToString());
