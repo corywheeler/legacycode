@@ -14,7 +14,7 @@ namespace Chapter._8
 			_domain = domain;
 		}
 
-		protected virtual InternetAddress GetFromAddress(Message message)
+		public InternetAddress GetFromAddress(Message message)
 		{
 			string fromAddress = GetDefaultFrom();
 
