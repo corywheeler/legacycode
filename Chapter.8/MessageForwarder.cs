@@ -20,19 +20,31 @@ namespace Chapter._8
 
 			if (_configuration.GetProperty("anonymous") == "true")
 			{
-				fromAddress = "anon-members@" + _domain;
+				fromAddress = FromAddress();
 			}
 			else
 			{
-				Address[] from = message.GetFrom();
-				if (from != null && from.Any())
-				{
-					fromAddress = from.GetValue(0).ToString();
-				}
-				
+				fromAddress = GetFrom(message);
 			}
 
 			return new InternetAddress(fromAddress);
+		}
+
+		private static string GetFrom(Message message)
+		{
+			Address[] from = message.GetFrom();
+			var fromAddress = string.Empty;
+
+			if (@from != null && @from.Any())
+			{
+				fromAddress = @from.GetValue(0).ToString();
+			}
+			return fromAddress;
+		}
+
+		private string FromAddress()
+		{
+			return "anon-members@" + _domain;
 		}
 
 		public void ForwardMessage(Message message)
