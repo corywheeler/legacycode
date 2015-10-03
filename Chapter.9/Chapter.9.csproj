@@ -39,10 +39,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ACTIOReport.cs" />
     <Compile Include="Certificate.cs" />
     <Compile Include="CreditMaster.cs" />
     <Compile Include="CreditValidator.cs" />
     <Compile Include="Customer.cs" />
+    <Compile Include="IRGHConnection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RFDIReport.cs" />
     <Compile Include="RGHConnection.cs" />
