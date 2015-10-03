@@ -55,6 +55,10 @@
       <Project>{BCB354D1-FC2E-4FE4-A14F-A48617EE9DD3}</Project>
       <Name>Chapter.8</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Chapter.9\Chapter.9.csproj">
+      <Project>{cd90923b-ed13-45e3-8151-d0f7b9e87644}</Project>
+      <Name>Chapter.9</Name>
+    </ProjectReference>
     <ProjectReference Include="..\LegacyCode\LegacyCode.csproj">
       <Project>{62e61ba8-77bc-4442-a770-96802187b5c7}</Project>
       <Name>LegacyCode</Name>
