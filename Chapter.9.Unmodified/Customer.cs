@@ -1,6 +1,6 @@
 ﻿namespace Chapter._9.Unmodified
 {
-	class Customer
+	public class Customer
 	{
 		public Customer()
 		{

@@ -1,6 +1,6 @@
 ﻿namespace Chapter._9.Unmodified
 {
-	class RFDIReport
+	public class RFDIReport
 	{
 		public RFDIReport()
 		{

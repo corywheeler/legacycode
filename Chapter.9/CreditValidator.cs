@@ -1,6 +1,6 @@
 ﻿namespace Chapter._9.Unmodified
 {
-	class CreditValidator
+	public class CreditValidator
 	{
 		private readonly RGHConnection _connection;
 		private readonly CreditMaster _master;
