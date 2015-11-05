@@ -44,6 +44,8 @@
   <ItemGroup>
     <Compile Include="Chapter.8\InstrumentCalculatorTests.cs" />
     <Compile Include="Chapter.8\MessageForwarderTests.cs" />
+    <Compile Include="Chapter.9\CreditValidatorTests.cs" />
+    <Compile Include="Chapter.9\FakeConnection.cs" />
     <Compile Include="NUnitExample.Tests\AccountTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
