@@ -2,10 +2,11 @@
 {
 	public interface IRGHConnection
 	{
+		RFDIReport Report { get; set; }
+
 		void Connect();
 		void DisConnect();
-		RFDIReport RFDIReportFor(int id);
 		ACTIOReport ACTIOReportFor(int customerID);
-		RFDIReport Report { get; set; }
+		RFDIReport RFDIReportFor(int id);
 	}
 }
