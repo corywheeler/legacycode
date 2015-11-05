@@ -8,7 +8,7 @@
 			Valid = _defaultStatus;
 		}
 	
-		public int Valid { get; private set; }
+		public static int Valid { get; private set; }
 
 		public int GetStatus()
 		{
