@@ -10,22 +10,20 @@ namespace LegacyCode.Tests.Chapter._9
 
 		public void Connect()
 		{
-			throw new System.NotImplementedException();
 		}
 
 		public void DisConnect()
 		{
-			throw new System.NotImplementedException();
 		}
 
 		public RFDIReport RFDIReportFor(int id)
 		{
-			throw new System.NotImplementedException();
+			return Report;
 		}
 
 		public ACTIOReport ACTIOReportFor(int customerID)
 		{
-			throw new System.NotImplementedException();
+			return null;
 		}
 
 	}
