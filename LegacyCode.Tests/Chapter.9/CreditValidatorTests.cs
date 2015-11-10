@@ -27,5 +27,11 @@ namespace LegacyCode.Tests.Chapter._9
 
 		}
 
+		[Test]
+		public void testAllPassed100Percent()
+		{
+			const double THRESHOLD = 0.0;
+			Assert.AreEqual(100.0, _validator.GetValidationPercent(), THRESHOLD);
+		}
 	}
 }
