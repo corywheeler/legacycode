@@ -7,16 +7,17 @@ namespace LegacyCode.Tests.Chapter._9
 	class CreditValidatorTests
 	{
 		private Certificate _result;
+		private CreditValidator _validator;
 
 		[SetUp]
 		public void Init()
 		{
 			CreditMaster master = new CreditMaster("crm2.mas", true);
-			IRGHConnection connection = new FakeConnection();
-			CreditValidator validator = new CreditValidator(connection, master, "a");
+			IRGHConnection connection = new FakeConnection("admin", "rii8ii9s");
+			_validator = new CreditValidator(connection, master, "a");
 			connection.Report = new RFDIReport();
 
-			_result = validator.ValidateCustomer(new Customer());
+			_result = _validator.ValidateCustomer(new Customer());
 		}
 
 		[Test]

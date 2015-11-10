@@ -4,6 +4,14 @@ namespace LegacyCode.Tests.Chapter._9
 {
 	class FakeConnection : IRGHConnection
 	{
+		private readonly string _password;
+		private readonly string _admin;
+
+		public FakeConnection(string admin, string password)
+		{
+			_admin = admin;
+			_password = password;
+		}
 
 
 		public RFDIReport Report { get; set; }
