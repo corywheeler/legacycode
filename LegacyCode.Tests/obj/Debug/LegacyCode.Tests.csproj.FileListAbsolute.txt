@@ -18,3 +18,5 @@ C:\projects\LegacyCode\LegacyCode.Tests\bin\Debug\nunit.framework.xml
 C:\projects\LegacyCode\LegacyCode.Tests\obj\Debug\LegacyCode.Tests.pdb
 C:\projects\LegacyCode\LegacyCode.Tests\bin\Debug\Chapter.8.dll
 C:\projects\LegacyCode\LegacyCode.Tests\bin\Debug\Chapter.8.pdb
+C:\projects\LegacyCode\LegacyCode.Tests\bin\Debug\Chapter.9.dll
+C:\projects\LegacyCode\LegacyCode.Tests\bin\Debug\Chapter.9.pdb
