@@ -1,6 +1,4 @@
-﻿using System.Runtime.InteropServices.ComTypes;
-
-namespace Chapter._9.Unmodified
+﻿namespace Chapter._9.Unmodified
 {
 	public class WatercolorPane
 	{
