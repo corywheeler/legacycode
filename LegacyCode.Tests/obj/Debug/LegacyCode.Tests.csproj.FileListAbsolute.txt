@@ -1,9 +1,0 @@
-C:\projects\LegacyCode\LegacyCode\LegacyCode.Tests\bin\Debug\LegacyCode.Tests.dll
-C:\projects\LegacyCode\LegacyCode\LegacyCode.Tests\bin\Debug\LegacyCode.Tests.pdb
-C:\projects\LegacyCode\LegacyCode\LegacyCode.Tests\bin\Debug\LegacyCode.exe
-C:\projects\LegacyCode\LegacyCode\LegacyCode.Tests\bin\Debug\nunit.framework.dll
-C:\projects\LegacyCode\LegacyCode\LegacyCode.Tests\bin\Debug\LegacyCode.pdb
-C:\projects\LegacyCode\LegacyCode\LegacyCode.Tests\bin\Debug\nunit.framework.xml
-C:\projects\LegacyCode\LegacyCode\LegacyCode.Tests\obj\Debug\LegacyCode.Tests.csprojResolveAssemblyReference.cache
-C:\projects\LegacyCode\LegacyCode\LegacyCode.Tests\obj\Debug\LegacyCode.Tests.dll
-C:\projects\LegacyCode\LegacyCode\LegacyCode.Tests\obj\Debug\LegacyCode.Tests.pdb
