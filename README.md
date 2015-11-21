@@ -10,4 +10,4 @@ The project is set up to be a C# project using NUnit as the testing framework.
 
 I have created the master branch to hold basic things necessary for anyone. Things like, a solution, and a project to hold the tests, as well as the inclusion of NUnit via NuGet.
 
-Beyond that, all of my work will exist in a branch with my name on it.
+Beyond that, all of my work will exist in a [branch with my name on it](https://github.com/corywheeler/legacycode/tree/corywheeler).
