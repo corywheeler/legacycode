@@ -1,4 +1,5 @@
 ﻿using Chapter._9;
+using Moq;
 using NUnit.Framework;
 
 namespace LegacyCode.Tests.Chapter._9
@@ -22,9 +23,20 @@ namespace LegacyCode.Tests.Chapter._9
 		}
 
 		[Test]
-		public void test()
+		public void TestComponentCount()
 		{
 			Assert.AreEqual(0, _pane.GetComponentCount());
+		}
+
+		[Test]
+		public void TestWidgetIsCalledUsingMockOfConcreteObject()
+		{
+			var focusWidget = new Mock<FocusWidget>();
+			_pane.SupersedeCursor(focusWidget.Object);
+			_pane.GetComponentCount();
+
+			focusWidget.Verify(widget => widget.GetComponentCount(), Times.Once);
+
 		}
 	}
 }

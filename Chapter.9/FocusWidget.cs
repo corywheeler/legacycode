@@ -12,7 +12,7 @@
 			
 		}
 
-		public int GetComponentCount()
+		public virtual int GetComponentCount()
 		{
 			return 0;
 		}
