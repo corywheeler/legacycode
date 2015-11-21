@@ -1,6 +1,11 @@
 ﻿namespace Chapter._9
 {
-	public class FocusWidget
+	public interface IFocusWidget
+	{
+		int GetComponentCount();
+	}
+
+	public class FocusWidget : IFocusWidget
 	{
 		public FocusWidget()
 		{

@@ -4,7 +4,7 @@
 	{
 		private Panel _anteriorPanel;
 		private Panel _backgroundPanel;
-		private FocusWidget _cursor;
+		private IFocusWidget _cursor;
 		private int _componentCount;
 
 		public WatercolorPane(Form border, WashBrush brush, Pattern backdrop)
@@ -24,7 +24,7 @@
 			return _componentCount + widgetComponentCount;
 		}
 
-		public void SupersedeCursor(FocusWidget widget)
+		public void SupersedeCursor(IFocusWidget widget)
 		{
 			_cursor = widget;
 		}

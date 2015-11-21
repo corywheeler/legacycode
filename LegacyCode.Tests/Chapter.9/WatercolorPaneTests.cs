@@ -38,5 +38,15 @@ namespace LegacyCode.Tests.Chapter._9
 			focusWidget.Verify(widget => widget.GetComponentCount(), Times.Once);
 
 		}
+
+		[Test]
+		public void TestWidgetIsCalledUsingMockOfInterface()
+		{
+			var focusWidget = new Mock<IFocusWidget>();
+			_pane.SupersedeCursor(focusWidget.Object);
+			_pane.GetComponentCount();
+
+			focusWidget.Verify(widget => widget.GetComponentCount(), Times.Once);
+		}
 	}
 }
