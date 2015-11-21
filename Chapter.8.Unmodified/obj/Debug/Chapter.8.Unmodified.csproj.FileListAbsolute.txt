@@ -1,5 +1,0 @@
-C:\projects\LegacyCode\Chapter.8.Unmodified\bin\Debug\Chapter.8.Unmodified.dll
-C:\projects\LegacyCode\Chapter.8.Unmodified\bin\Debug\Chapter.8.Unmodified.pdb
-C:\projects\LegacyCode\Chapter.8.Unmodified\obj\Debug\Chapter.8.Unmodified.csprojResolveAssemblyReference.cache
-C:\projects\LegacyCode\Chapter.8.Unmodified\obj\Debug\Chapter.8.Unmodified.dll
-C:\projects\LegacyCode\Chapter.8.Unmodified\obj\Debug\Chapter.8.Unmodified.pdb
