@@ -44,10 +44,16 @@
     <Compile Include="CreditMaster.cs" />
     <Compile Include="CreditValidator.cs" />
     <Compile Include="Customer.cs" />
+    <Compile Include="FocusWidget.cs" />
+    <Compile Include="Form.cs" />
     <Compile Include="IRGHConnection.cs" />
+    <Compile Include="Panel.cs" />
+    <Compile Include="Pattern.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RFDIReport.cs" />
     <Compile Include="RGHConnection.cs" />
+    <Compile Include="WashBrush.cs" />
+    <Compile Include="WatercolorPane.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
