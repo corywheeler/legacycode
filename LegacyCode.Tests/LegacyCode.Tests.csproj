@@ -48,6 +48,7 @@
     <Compile Include="Chapter.8\InstrumentCalculatorTests.cs" />
     <Compile Include="Chapter.8\MessageForwarderTests.cs" />
     <Compile Include="Chapter.9\CreditValidatorTests.cs" />
+    <Compile Include="Chapter.9\FacilityTests.cs" />
     <Compile Include="Chapter.9\FakeConnection.cs" />
     <Compile Include="Chapter.9\MockFocusWidget.cs" />
     <Compile Include="Chapter.9\TestingFocusWidget.cs" />
