@@ -4,7 +4,7 @@
 	{
 		private static PermitRepository _instance = null;
 
-		private PermitRepository() { }
+		protected PermitRepository() { }
 
 		public static PermitRepository GetInstance()
 		{
