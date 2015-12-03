@@ -2,13 +2,13 @@
 {
 	public class PermitNotice
 	{
-		private readonly int _permitCode;
-		private readonly string _owner;
+		public int PermitCode { get; private set; }
+		public string Owner { get; private set; }
 
 		public PermitNotice(int permitCode, string owner)
 		{
-			_permitCode = permitCode;
-			_owner = owner;
+			PermitCode = permitCode;
+			Owner = owner;
 		}
 
 		public bool IsValid()

@@ -2,11 +2,11 @@
 {
 	public class Permit
 	{
-		private readonly PermitNotice _notice;
+		public PermitNotice Notice { get; private set; }
 
 		public Permit(PermitNotice notice)
 		{
-			_notice = notice;
+			Notice = notice;
 		}
 
 		public bool IsValid()
