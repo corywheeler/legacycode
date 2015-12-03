@@ -1,10 +1,16 @@
-﻿namespace Chapter._9
+﻿using System;
+using System.Globalization;
+
+namespace Chapter._9
 {
 	public class PermitRepository
 	{
 		private static PermitRepository _instance = null;
 
-		protected PermitRepository() { }
+		protected PermitRepository()
+		{
+
+		}
 
 		public static PermitRepository GetInstance()
 		{
@@ -31,6 +37,16 @@
 			// ...
 
 			return new Permit(notice);
+		}
+
+		public int Id()
+		{
+			return 10;
+		}
+
+		public static void SetTestingInstance(PermitRepository instance)
+		{
+			_instance = instance;
 		}
 	}
 }
