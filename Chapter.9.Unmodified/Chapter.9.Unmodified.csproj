@@ -46,6 +46,7 @@
     <Compile Include="Facility.cs" />
     <Compile Include="FocusWidget.cs" />
     <Compile Include="Form.cs" />
+    <Compile Include="MeetingResolver.cs" />
     <Compile Include="Panel.cs" />
     <Compile Include="Pattern.cs" />
     <Compile Include="Permit.cs" />
@@ -55,6 +56,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RFDIReport.cs" />
     <Compile Include="RGHConnection.cs" />
+    <Compile Include="Scheduler.cs" />
+    <Compile Include="SchedulerPane.cs" />
+    <Compile Include="SchedulingTask.cs" />
+    <Compile Include="SchedulingTaskPane.cs" />
+    <Compile Include="SerialTask.cs" />
     <Compile Include="WashBrush.cs" />
     <Compile Include="WatercolorPane.cs" />
   </ItemGroup>
