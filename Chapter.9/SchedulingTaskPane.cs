@@ -12,6 +12,7 @@
 		public void ScheduleTask()
 		{
 			// here we would like to sense that _task.Run() was called.
+			_task.Run();
 		}
 	}
 }
