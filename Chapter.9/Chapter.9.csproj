@@ -48,6 +48,7 @@
     <Compile Include="FocusWidget.cs" />
     <Compile Include="Form.cs" />
     <Compile Include="IRGHConnection.cs" />
+    <Compile Include="ISchedulingTask.cs" />
     <Compile Include="MeetingResolver.cs" />
     <Compile Include="Panel.cs" />
     <Compile Include="Pattern.cs" />

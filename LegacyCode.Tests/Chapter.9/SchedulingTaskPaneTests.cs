@@ -7,15 +7,13 @@ namespace LegacyCode.Tests.Chapter._9
 	[TestFixture]
 	class SchedulingTaskPaneTests
 	{
-		private SchedulingTask _schedulingTask;
+		private Mock<ISchedulingTask> _schedulingTask;
 
 		[SetUp]
 		public void Init()
 		{
-			var meetingResolver = new MeetingResolver();
-			var scheduler = new Scheduler();
-			_schedulingTask = new SchedulingTask(scheduler, meetingResolver);
-			var schedulingTaskPane = new SchedulingTaskPane(_schedulingTask);
+			_schedulingTask = new Mock<ISchedulingTask>();
+			var schedulingTaskPane = new SchedulingTaskPane(_schedulingTask.Object);
 			schedulingTaskPane.ScheduleTask();
 		}
 

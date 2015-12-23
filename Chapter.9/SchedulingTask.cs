@@ -2,7 +2,7 @@
 
 namespace Chapter._9
 {
-	public class SchedulingTask: SerialTask
+	public class SchedulingTask: SerialTask, ISchedulingTask
 	{
 		public SchedulingTask(Scheduler scheduler, MeetingResolver resolver)
 		{

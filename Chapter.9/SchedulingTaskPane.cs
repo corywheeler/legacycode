@@ -2,9 +2,9 @@
 {
 	public class SchedulingTaskPane: SchedulerPane
 	{
-		private SchedulingTask _task;
+		private ISchedulingTask _task;
 
-		public SchedulingTaskPane(SchedulingTask task)
+		public SchedulingTaskPane(ISchedulingTask task)
 		{
 			_task = task;
 		}
