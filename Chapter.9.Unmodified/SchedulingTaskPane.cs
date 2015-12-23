@@ -1,6 +1,6 @@
 ﻿namespace Chapter._9.Unmodified
 {
-	class SchedulingTaskPane: SchedulerPane
+	public class SchedulingTaskPane: SchedulerPane
 	{
 		private SchedulingTask _task;
 
