@@ -9,7 +9,10 @@ namespace LegacyCode.Tests.Chapter._9
 		[SetUp]
 		public void Init()
 		{
-			var schedulingTaskPane = new SchedulingTaskPane(new SchedulingTask(new Scheduler(), new MeetingResolver()));
+			var meetingResolver = new MeetingResolver();
+			var scheduler = new Scheduler();
+			var schedulingTask = new SchedulingTask(scheduler, meetingResolver);
+			var schedulingTaskPane = new SchedulingTaskPane(schedulingTask);
 		}
 	}
 }
