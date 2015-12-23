@@ -52,6 +52,7 @@
     <Compile Include="Chapter.9\FakeConnection.cs" />
     <Compile Include="Chapter.9\MockFocusWidget.cs" />
     <Compile Include="Chapter.9\PermitRepositoryTestsSettingTestingInstance.cs" />
+    <Compile Include="Chapter.9\SchedulingTaskPaneTests.cs" />
     <Compile Include="Chapter.9\TestingFocusWidget.cs" />
     <Compile Include="Chapter.9\TestingPermitRepository.cs" />
     <Compile Include="Chapter.9\WatercolorPaneTests.cs" />
