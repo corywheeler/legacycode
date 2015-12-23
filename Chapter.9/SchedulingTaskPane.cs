@@ -9,7 +9,7 @@
 			_task = task;
 		}
 
-		public void CallRunOnTask()
+		public void ScheduleTask()
 		{
 			// here we would like to sense that _task.Run() was called.
 		}
