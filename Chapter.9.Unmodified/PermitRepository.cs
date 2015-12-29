@@ -32,5 +32,22 @@
 
 			return new Permit(notice);
 		}
+
+		public Permit FindAssociatedFromOrigination(OriginationPermit permit)
+		{
+			// open permit database
+			// ...
+
+			// select using values in notice
+			// ...
+
+			// verify we have only one matching permit, it not report error
+			// ...
+
+			// return the matching permit
+			// ...
+
+			return new Permit();
+		}
 	}
 }

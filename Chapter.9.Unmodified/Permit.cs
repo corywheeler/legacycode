@@ -11,6 +11,9 @@
 			_isValid = false;
 		}
 
+		public Permit()
+		{
+			_isValid = false;
 		}
 
 		public bool IsValid()
