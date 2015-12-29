@@ -38,9 +38,6 @@
 			// open permit database
 			// ...
 
-			// select using values in notice
-			// ...
-
 			// verify we have only one matching permit, it not report error
 			// ...
 
