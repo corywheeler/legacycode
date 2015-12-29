@@ -39,6 +39,20 @@ namespace Chapter._9
 			return new Permit(notice);
 		}
 
+		public Permit FindAssociatedFromOrigination(OriginationPermit permit)
+		{
+			// open permit database
+			// ...
+
+			// verify we have only one matching permit, it not report error
+			// ...
+
+			// return the matching permit
+			// ...
+
+			return new Permit();
+		}
+
 		public int Id()
 		{
 			return 10;

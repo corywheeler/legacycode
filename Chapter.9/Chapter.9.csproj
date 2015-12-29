@@ -45,11 +45,14 @@
     <Compile Include="CreditValidator.cs" />
     <Compile Include="Customer.cs" />
     <Compile Include="Facility.cs" />
+    <Compile Include="FacilityPermit.cs" />
     <Compile Include="FocusWidget.cs" />
     <Compile Include="Form.cs" />
+    <Compile Include="IndustrialFacility.cs" />
     <Compile Include="IRGHConnection.cs" />
     <Compile Include="ISchedulingTask.cs" />
     <Compile Include="MeetingResolver.cs" />
+    <Compile Include="OriginationPermit.cs" />
     <Compile Include="Panel.cs" />
     <Compile Include="Pattern.cs" />
     <Compile Include="Permit.cs" />
