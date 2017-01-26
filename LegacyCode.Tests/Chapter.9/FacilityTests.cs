@@ -11,7 +11,7 @@ namespace LegacyCode.Tests.Chapter._9
 		[SetUp]
 		public void Init()
 		{
-			PermitNotice notice = new PermitNotice(0, "a");
+			var notice = new PermitNotice(0, "a");
 			_facility = new Facility(Facility.Residence, "b", notice);
 		}
 

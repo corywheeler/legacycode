@@ -16,7 +16,7 @@ namespace LegacyCode.Tests.Chapter._8
 		[Test]
 		public void testFirstMoment()
 		{
-			InstrumentCalculator calculator = new InstrumentCalculator();
+			var calculator = new InstrumentCalculator();
 			calculator.addElement(1.0);
 			calculator.addElement(2.0);
 
@@ -36,7 +36,7 @@ namespace LegacyCode.Tests.Chapter._8
 		{
 			const double TOLERANCE = 0.0;
 
-			InstrumentCalculator calculator = new InstrumentCalculator();
+			var calculator = new InstrumentCalculator();
 			calculator.addElement(1.0);
 			calculator.addElement(2.0);
 

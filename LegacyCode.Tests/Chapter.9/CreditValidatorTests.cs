@@ -12,7 +12,7 @@ namespace LegacyCode.Tests.Chapter._9
 		[SetUp]
 		public void Init()
 		{
-			CreditMaster master = new CreditMaster("crm2.mas", true);
+			var master = new CreditMaster("crm2.mas", true);
 			IRGHConnection connection = new FakeConnection("admin", "rii8ii9s");
 			_validator = new CreditValidator(connection, master, "a");
 			connection.Report = new RFDIReport();

@@ -12,11 +12,11 @@ namespace LegacyCode.Tests.Chapter._9
 		[SetUp]
 		public void Init()
 		{
-			Form form = new Form();
-			WashBrush border = new WashBrush();
-			Pattern backDrop = new Pattern();
+			var form = new Form();
+			var border = new WashBrush();
+			var backDrop = new Pattern();
 
-			TestingFocusWidget widget = new TestingFocusWidget();
+			var widget = new TestingFocusWidget();
 			_pane = new WatercolorPane(form, border, backDrop);
 
 			_pane.SupersedeCursor(widget);

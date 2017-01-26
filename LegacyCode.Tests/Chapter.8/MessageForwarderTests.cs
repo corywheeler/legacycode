@@ -23,8 +23,8 @@ namespace LegacyCode.Tests.Chapter._8
 			_domain = "shoptotrot.com";
 			_listAddress = "shoppers";
 
-			Properties configuration = new Properties();
-			MessageForwarder forwarder = new MessageForwarder(configuration, _domain);
+			var configuration = new Properties();
+			var forwarder = new MessageForwarder(configuration, _domain);
 			forwarder.ForwardMessage(MakeFakeMessage());
 			Console.WriteLine(forwarder.GetDomain());
 			Console.WriteLine(_expectedMessage.GetFrom().GetValue(0).ToString());

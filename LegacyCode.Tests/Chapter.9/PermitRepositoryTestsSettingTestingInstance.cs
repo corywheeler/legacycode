@@ -1,5 +1,4 @@
-﻿using System;
-using Chapter._9;
+﻿using Chapter._9;
 using NUnit.Framework;
 
 namespace LegacyCode.Tests.Chapter._9
