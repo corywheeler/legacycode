@@ -27,7 +27,7 @@ namespace LegacyCode.Tests.Chapter._8
 			var forwarder = new MessageForwarder(configuration, _domain);
 			forwarder.ForwardMessage(MakeFakeMessage());
 			Console.WriteLine(forwarder.GetDomain());
-			Console.WriteLine(_expectedMessage.GetFrom().GetValue(0).ToString());
+			Console.WriteLine(_expectedMessage.GetFrom().GetValue(0));
 
 			Assert.AreEqual(_expectedMessage.GetFrom().GetValue(0).ToString(), "anon-" + _listAddress + "@" + forwarder.GetDomain());
 		}
