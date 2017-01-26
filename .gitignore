@@ -1,3 +1,6 @@
 *.suo
 obj
 bin
+
+# Xamarin/MonoDevelop User Specific
+*.userprefs
