@@ -2,7 +2,11 @@
 {
 	public class Facility
 	{
-		private Permit _basePermit;
+		protected Permit _basePermit;
+
+		public Facility()
+		{
+		}
 
 		public Facility(int facilityCode, string owner, PermitNotice notice)
 		{

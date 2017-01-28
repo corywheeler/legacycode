@@ -1,9 +1,7 @@
 ﻿namespace Chapter._9.Unmodified
 {
-	public class IndustrialFacility
+	public class IndustrialFacility : Facility
 	{
-		private Permit _basePermit;
-
 		public IndustrialFacility(int facilityCode, string owner, OriginationPermit permit)
 		{
 			Permit associatedPermit = PermitRepository.GetInstance().FindAssociatedFromOrigination(permit);
