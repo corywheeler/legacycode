@@ -16,8 +16,11 @@ namespace LegacyCode.Tests
 
 		public override void Validate()
 		{
-			base.Validate();
+			BecomeValid();
+		}
 
+		private void BecomeValid()
+		{
 			_isValid = true;
 		}
 	}
