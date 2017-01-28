@@ -16,7 +16,7 @@ namespace LegacyCode.Tests.Chapter._9
 		}
 
 		[Test]
-		public void SchedulingTaskShouldBeCalledOnce()
+		public void FacilityShouldHavePermits()
 		{
 			Assert.True(_facility.HasPermits());
 		}
