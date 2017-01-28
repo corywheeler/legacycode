@@ -2,6 +2,7 @@
 {
 	public class FacilityPermit : Permit
 	{
+		
 		public FacilityPermit(PermitNotice permitNotice) : base(permitNotice)
 		{
 			
