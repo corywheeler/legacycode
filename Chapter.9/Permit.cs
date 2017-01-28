@@ -21,7 +21,7 @@
 			return _isValid;
 		}
 
-		public void Validate()
+		public virtual void Validate()
 		{
 			
 		}

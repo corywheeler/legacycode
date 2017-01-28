@@ -8,7 +8,7 @@
 
 		}
 
-		public new void Validate()
+		public override void Validate()
 		{
 			// form connection to database
 
