@@ -28,14 +28,21 @@
 			{
 				throw new PermitViolation(permit);
 			}
+		}
 
-
+		public bool HasPermits()
+		{
+			return _basePermit.IsValid();
 		}
 
 		public static int Residence
 		{
 			get { return _residence; }
 			private set { _residence = value; }
+		}
+
+		public static int HT_1 { 
+			get { return 1; }
 		}
 	}
 }

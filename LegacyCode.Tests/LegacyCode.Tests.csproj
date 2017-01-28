@@ -58,6 +58,9 @@
     <Compile Include="Chapter.9\WatercolorPaneTests.cs" />
     <Compile Include="NUnitExample.Tests\AccountTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Chapter.9\FakeOriginationPermit.cs" />
+    <Compile Include="Chapter.9\AlwaysValidPermit.cs" />
+    <Compile Include="Chapter.9\IndustrialFacilityTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
