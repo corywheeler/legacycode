@@ -2,8 +2,12 @@
 {
 	public class Facility
 	{
-		private Permit _basePermit;
+		protected Permit _basePermit;
 		private static int _residence = 1;
+
+		public Facility()
+		{
+		}
 
 		public Facility(int facilityCode, string owner, PermitNotice notice)
 		{

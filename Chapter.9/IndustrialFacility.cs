@@ -1,9 +1,7 @@
 ﻿namespace Chapter._9
 {
-	public class IndustrialFacility
+	public class IndustrialFacility : Facility
 	{
-		private Permit _basePermit;
-
 		public IndustrialFacility(int facilityCode, string owner, OriginationPermit permit)
 		{
 			Permit associatedPermit = PermitRepository.GetInstance().FindAssociatedFromOrigination(permit);
@@ -11,7 +9,7 @@
 			if (associatedPermit.IsValid() && !permit.IsValid())
 			{
 				_basePermit = associatedPermit;
-			} 
+			}
 			else if (!permit.IsValid())
 			{
 				permit.Validate();
@@ -21,7 +19,6 @@
 			{
 				throw new PermitViolation(permit);
 			}
-
 		}
 	}
 }
