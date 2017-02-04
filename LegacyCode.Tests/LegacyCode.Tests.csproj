@@ -61,6 +61,8 @@
     <Compile Include="Chapter.9\FakeOriginationPermit.cs" />
     <Compile Include="Chapter.9\AlwaysValidPermit.cs" />
     <Compile Include="Chapter.9\IndustrialFacilityTests.cs" />
+    <Compile Include="Chapter.10\CCAImageTests.cs" />
+    <Compile Include="Chapter.10\TestingCCAImage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -77,6 +79,10 @@
     <ProjectReference Include="..\LegacyCode\LegacyCode.csproj">
       <Project>{62e61ba8-77bc-4442-a770-96802187b5c7}</Project>
       <Name>LegacyCode</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Chapter.10\Chapter.10.csproj">
+      <Project>{ACFD6602-781B-4ABC-93BA-087679D87901}</Project>
+      <Name>Chapter.10</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

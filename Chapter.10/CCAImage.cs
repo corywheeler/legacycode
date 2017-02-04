@@ -1,14 +1,17 @@
-﻿namespace Chapter._10
+﻿using System;
+
+namespace Chapter._10
 {
 	public class CCAImage
 	{
 
-		public void snap()
+		public void Snap()
 		{
 		}
 
-		private void setSnapRegion(int x, int y, int dx, int dy)
+		protected void SetSnapRegion(int x, int y, int dx, int dy)
 		{
+			throw new NotImplementedException();
 		}
 	}
 }

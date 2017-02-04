@@ -3,11 +3,11 @@
 	public class CCAImage
 	{
 
-		public void snap()
+		public void Snap()
 		{
 		}
 
-		private void setSnapRegion(int x, int y, int dx, int dy)
+		private void SetSnapRegion(int x, int y, int dx, int dy)
 		{
 		}
 	}
