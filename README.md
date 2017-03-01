@@ -8,6 +8,9 @@ When I read technical books, my fingers have to do the walking to help me to dri
 
 The project is set up to be a C# project using NUnit as the testing framework.
 
-I have created the [master branch](https://github.com/corywheeler/legacycode/tree/master) to hold basic things necessary for anyone. Things like, a solution, and a project to hold the tests, as well as the inclusion of [NUnit](http://www.nunit.org) and [Moq](https://github.com/Moq/moq4) via NuGet.
+I have created the [master branch](https://github.com/corywheeler/legacycode/tree/master) to hold basic things necessary for anyone. Things like: 
+* A solution
+* A project to hold the tests
+  * This includes [NUnit](http://www.nunit.org) and [Moq](https://github.com/Moq/moq4) via NuGet.
 
 Beyond that, all of my work will exist in a [branch with my name on it](https://github.com/corywheeler/legacycode/tree/corywheeler).
