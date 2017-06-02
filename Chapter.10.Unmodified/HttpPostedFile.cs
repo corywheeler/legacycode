@@ -46,9 +46,9 @@ namespace System.Web
 
 		//internal HttpPostedFile(String filename, String contentType, HttpInputStream stream)
 		//{
-		//	_filename = filename;
-		//	_contentType = contentType;
-		//	_stream = stream;
+		//  _filename = filename;
+		//  _contentType = contentType;
+		//  _stream = stream;
 		//}
 
 		/*
@@ -64,7 +64,7 @@ namespace System.Web
 		public String FileName
 		{
 			//get { return _filename; }
-            get { return string.Empty; }
+			get { return string.Empty; }
 		}
 
 		/*
@@ -79,7 +79,7 @@ namespace System.Web
 		public String ContentType
 		{
 			//get { return _contentType; }
-            get { return string.Empty; }
+			get { return string.Empty; }
 		}
 
 		/*
@@ -94,7 +94,7 @@ namespace System.Web
 		public int ContentLength
 		{
 			//get { return (int)_stream.Length; }
-            get { return 10; }
+			get { return 10; }
 
 		}
 
@@ -111,7 +111,7 @@ namespace System.Web
 		public Stream InputStream
 		{
 			//get { return _stream; }
-            get { return null; }
+			get { return null; }
 		}
 
 		/*
@@ -128,23 +128,23 @@ namespace System.Web
 			//// VSWhidbey 82855
 			//if (!Path.IsPathRooted(filename))
 			//{
-			//	HttpRuntimeSection config = RuntimeConfig.GetConfig().HttpRuntime;
-			//	if (config.RequireRootedSaveAsPath)
-			//	{
-			//		throw new HttpException(SR.GetString(SR.SaveAs_requires_rooted_path, filename));
-			//	}
+			//  HttpRuntimeSection config = RuntimeConfig.GetConfig().HttpRuntime;
+			//  if (config.RequireRootedSaveAsPath)
+			//  {
+			//      throw new HttpException(SR.GetString(SR.SaveAs_requires_rooted_path, filename));
+			//  }
 			//}
 
 			//FileStream f = new FileStream(filename, FileMode.Create);
 
 			//try
 			//{
-			//	_stream.WriteTo(f);
-			//	f.Flush();
+			//  _stream.WriteTo(f);
+			//  f.Flush();
 			//}
 			//finally
 			//{
-			//	f.Close();
+			//  f.Close();
 			//}
 		}
 	}

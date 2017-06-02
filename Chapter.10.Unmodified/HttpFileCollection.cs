@@ -49,28 +49,28 @@ namespace System.Web
 
 		//[SuppressMessage("Microsoft.Globalization", "CA1309:UseOrdinalStringComparison", MessageId = "System.Collections.Specialized.NameObjectCollectionBase.#ctor(System.Collections.IEqualityComparer)", Justification = @"By design")]
 		//internal HttpFileCollection()
-		//	: base(StringComparer.InvariantCultureIgnoreCase)
+		//  : base(StringComparer.InvariantCultureIgnoreCase)
 		//{
 		//}
 
 		//// This copy constructor is used by the granular request validation feature. Since these collections are immutable
 		//// once created, it's ok for us to have two collections containing the same data.
 		//internal HttpFileCollection(HttpFileCollection col)
-		//	: this()
+		//  : this()
 		//{
 
-		//	// We explicitly don't copy validation-related fields, as we want the copy to "reset" validation state.
+		//  // We explicitly don't copy validation-related fields, as we want the copy to "reset" validation state.
 
-		//	// Copy the file references from the original collection into this instance
-		//	for (int i = 0; i < col.Count; i++)
-		//	{
-		//		ThrowIfMaxHttpCollectionKeysExceeded();
-		//		string key = col.BaseGetKey(i);
-		//		object value = col.BaseGet(i);
-		//		BaseAdd(key, value);
-		//	}
+		//  // Copy the file references from the original collection into this instance
+		//  for (int i = 0; i < col.Count; i++)
+		//  {
+		//      ThrowIfMaxHttpCollectionKeysExceeded();
+		//      string key = col.BaseGetKey(i);
+		//      object value = col.BaseGet(i);
+		//      BaseAdd(key, value);
+		//  }
 
-		//	IsReadOnly = col.IsReadOnly;
+		//  IsReadOnly = col.IsReadOnly;
 		//}
 
 		/// <devdoc>
@@ -80,69 +80,69 @@ namespace System.Web
 		{
 			//if (_all == null)
 			//{
-			//	int n = Count;
-			//	HttpPostedFile[] all = new HttpPostedFile[n];
-			//	for (int i = 0; i < n; i++)
-			//		all[i] = Get(i);
-			//	_all = all; // wait until end of loop to set _all reference in case Get throws
+			//  int n = Count;
+			//  HttpPostedFile[] all = new HttpPostedFile[n];
+			//  for (int i = 0; i < n; i++)
+			//      all[i] = Get(i);
+			//  _all = all; // wait until end of loop to set _all reference in case Get throws
 			//}
 
 			//if (_all != null)
 			//{
-			//	_all.CopyTo(dest, index);
+			//  _all.CopyTo(dest, index);
 			//}
 		}
 
 		//internal void AddFile(String key, HttpPostedFile file)
 		//{
-		//	ThrowIfMaxHttpCollectionKeysExceeded();
+		//  ThrowIfMaxHttpCollectionKeysExceeded();
 
-		//	_all = null;
-		//	_allKeys = null;
+		//  _all = null;
+		//  _allKeys = null;
 
-		//	BaseAdd(key, file);
+		//  BaseAdd(key, file);
 		//}
 
 		//// MSRC 12038: limit the maximum number of items that can be added to the collection,
 		//// as a large number of items potentially can result in too many hash collisions that may cause DoS
 		//private void ThrowIfMaxHttpCollectionKeysExceeded()
 		//{
-		//	if (Count >= AppSettings.MaxHttpCollectionKeys)
-		//	{
-		//		throw new InvalidOperationException(SR.GetString(SR.CollectionCountExceeded_HttpValueCollection, AppSettings.MaxHttpCollectionKeys));
-		//	}
+		//  if (Count >= AppSettings.MaxHttpCollectionKeys)
+		//  {
+		//      throw new InvalidOperationException(SR.GetString(SR.CollectionCountExceeded_HttpValueCollection, AppSettings.MaxHttpCollectionKeys));
+		//  }
 		//}
 
 		//internal void EnableGranularValidation(ValidateStringCallback validationCallback)
 		//{
-		//	// Iterate over all the files, adding each to the set containing the files awaiting validation.
-		//	// Unlike dictionaries, HashSet<T> can contain null keys, so don't need to special-case them.
-		//	_filesAwaitingValidation = new HashSet<HttpPostedFile>();
-		//	for (int i = 0; i < Count; i++)
-		//	{
-		//		_filesAwaitingValidation.Add((HttpPostedFile)BaseGet(i));
-		//	}
-		//	_validationCallback = validationCallback;
+		//  // Iterate over all the files, adding each to the set containing the files awaiting validation.
+		//  // Unlike dictionaries, HashSet<T> can contain null keys, so don't need to special-case them.
+		//  _filesAwaitingValidation = new HashSet<HttpPostedFile>();
+		//  for (int i = 0; i < Count; i++)
+		//  {
+		//      _filesAwaitingValidation.Add((HttpPostedFile)BaseGet(i));
+		//  }
+		//  _validationCallback = validationCallback;
 		//}
 
 		private void EnsureFileValidated(HttpPostedFile file)
 		{
-		//	if (_filesAwaitingValidation == null)
-		//	{
-		//		// If dynamic validation hasn't been enabled, no-op.
-		//		return;
-		//	}
+			//  if (_filesAwaitingValidation == null)
+			//  {
+			//      // If dynamic validation hasn't been enabled, no-op.
+			//      return;
+			//  }
 
-		//	if (!_filesAwaitingValidation.Contains(file))
-		//	{
-		//		// If this file has already been validated (or is excluded), no-op.
-		//		return;
-		//	}
+			//  if (!_filesAwaitingValidation.Contains(file))
+			//  {
+			//      // If this file has already been validated (or is excluded), no-op.
+			//      return;
+			//  }
 
-		//	// If validation fails, the callback will throw an exception. If validation succeeds,
-		//	// we can remove it from the candidates list. Key is unused.
-		//	_validationCallback(null /* key */, file.FileName);
-		//	_filesAwaitingValidation.Remove(file);
+			//  // If validation fails, the callback will throw an exception. If validation succeeds,
+			//  // we can remove it from the candidates list. Key is unused.
+			//  _validationCallback(null /* key */, file.FileName);
+			//  _filesAwaitingValidation.Remove(file);
 		}
 
 		//
@@ -161,7 +161,7 @@ namespace System.Web
 			HttpPostedFile file = (HttpPostedFile)BaseGet(name);
 			//if (file != null)
 			//{
-			//	EnsureFileValidated(file);
+			//  EnsureFileValidated(file);
 			//}
 			return file;
 		}
@@ -259,14 +259,14 @@ namespace System.Web
 		{
 			//get
 			//{
-			//	if (_allKeys == null)
-			//		_allKeys = BaseGetAllKeys();
+			//  if (_allKeys == null)
+			//      _allKeys = BaseGetAllKeys();
 
-			//	return _allKeys;
+			//  return _allKeys;
 			//}
 			get
 			{
-                return null;
+				return null;
 			}
 		}
 	}

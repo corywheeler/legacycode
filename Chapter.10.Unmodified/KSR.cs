@@ -7,11 +7,11 @@ namespace Chapter._10
     {
         private const int MIN_LEN = 0;
 
-        public IList GetKSRStreams(HttpFileCollection files) 
+        public IList GetKSRStreams(HttpFileCollection files)
         {
             ArrayList list = new ArrayList();
 
-            foreach (string name in files) 
+            foreach (string name in files)
             {
                 HttpPostedFile file = files[name];
 

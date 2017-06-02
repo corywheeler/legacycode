@@ -35,6 +35,7 @@
     <Compile Include="HttpFileCollection.cs" />
     <Compile Include="HttpPostedFile.cs" />
     <Compile Include="KSR.cs" />
+    <Compile Include="NameObjectCollectionBase.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
