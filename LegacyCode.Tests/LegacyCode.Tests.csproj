@@ -63,6 +63,7 @@
     <Compile Include="Chapter.9\IndustrialFacilityTests.cs" />
     <Compile Include="Chapter.10\CCAImageTests.cs" />
     <Compile Include="Chapter.10\TestingCCAImage.cs" />
+    <Compile Include="Chapter.10\KSRTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

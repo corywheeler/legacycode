@@ -26,6 +26,13 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="CCAImage.cs" />
+    <Compile Include="HttpFileCollection.cs" />
+    <Compile Include="HttpPostedFile.cs" />
+    <Compile Include="KSR.cs" />
+    <Compile Include="OurHttpFileCollection.cs" />
+    <Compile Include="NameObjectCollectionBase.cs" />
+    <Compile Include="HttpPostedFileWrapper.cs" />
+    <Compile Include="IHttpPostedFile.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
