@@ -9,6 +9,7 @@ namespace LegacyCode.Tests.Chapter._10
     [TestFixture]
     public class KSRTests
     {
+        private const string filename = "testFile.ksr";
         private KSR _ksr;
         private IList _streams;
 
@@ -17,7 +18,7 @@ namespace LegacyCode.Tests.Chapter._10
         {
             _ksr = new KSR();
             OurHttpFileCollection ourHttpFileCollection = new OurHttpFileCollection();
-            ourHttpFileCollection.Add(new FakeHttpPostedFile("testFile.ksr"));
+            ourHttpFileCollection.Add(new FakeHttpPostedFile(100, new FakeFileStream(filename, FileMode.Open), filename));
            
             _streams = _ksr.GetKSRStreams(ourHttpFileCollection);
         }
@@ -30,69 +31,68 @@ namespace LegacyCode.Tests.Chapter._10
 
         private class FakeHttpPostedFile : IHttpPostedFile
         {
-            private string fileName;
-            private int fileLength;
-            private Stream stream;
+            private string _fileName;
+            private int _fileLength;
+            private Stream _stream;
 
-            public FakeHttpPostedFile(string fileName)
-            {
-                this.fileName = fileName;
-                this.fileLength = 1024;
-                string fakeFilePath = string.Format("path\\{0}", fileName);
-                this.stream = new FakeFileStream(fakeFilePath, FileMode.Open);
-            }
+			public FakeHttpPostedFile(int length, Stream stream, string name)
+			{
+                this._fileLength = length;
+                this._stream = stream;
+                this._fileName = name;
+			}
 
-            public string FileName => this.fileName;
+            public string FileName => this._fileName;
 
-            public int ContentLength => this.fileLength;
+            public int ContentLength => this._fileLength;
 
-            public Stream InputStream => this.stream;
-
-            private class FakeFileStream : Stream
-            {
-                private string fakeFilePath;
-                private FileMode open;
-
-                public FakeFileStream(string fakeFilePath, FileMode open)
-                {
-                    this.fakeFilePath = fakeFilePath;
-                    this.open = open;
-                }
-
-                public override bool CanRead => false;
-
-                public override bool CanSeek => false;
-
-                public override bool CanWrite => false;
-
-                public override long Length => 0;
-
-                public override long Position { get; set; }
-
-                public override void Flush()
-                {
-                }
-
-                public override int Read(byte[] buffer, int offset, int count)
-                {
-                    return 0;
-                }
-
-                public override long Seek(long offset, SeekOrigin origin)
-                {
-                    return 0;
-                }
-
-                public override void SetLength(long value)
-                {
-                }
-
-                public override void Write(byte[] buffer, int offset, int count)
-                {
-                    
-                }
-            }
+            public Stream InputStream => this._stream;
         }
+
+		private class FakeFileStream : Stream
+		{
+			private string fakeFilePath;
+			private FileMode open;
+
+			public FakeFileStream(string fakeFilePath, FileMode open)
+			{
+				this.fakeFilePath = fakeFilePath;
+				this.open = open;
+			}
+
+			public override bool CanRead => false;
+
+			public override bool CanSeek => false;
+
+			public override bool CanWrite => false;
+
+			public override long Length => 0;
+
+			public override long Position { get; set; }
+
+			public override void Flush()
+			{
+			}
+
+			public override int Read(byte[] buffer, int offset, int count)
+			{
+				return 0;
+			}
+
+			public override long Seek(long offset, SeekOrigin origin)
+			{
+				return 0;
+			}
+
+			public override void SetLength(long value)
+			{
+			}
+
+			public override void Write(byte[] buffer, int offset, int count)
+			{
+
+			}
+		}
 
 
     }
