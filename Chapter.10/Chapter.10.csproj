@@ -33,6 +33,14 @@
     <Compile Include="NameObjectCollectionBase.cs" />
     <Compile Include="HttpPostedFileWrapper.cs" />
     <Compile Include="IHttpPostedFile.cs" />
+    <Compile Include="AccountDetailFrame.cs" />
+    <Compile Include="Frame.cs" />
+    <Compile Include="ActionListener.cs" />
+    <Compile Include="WindowListener.cs" />
+    <Compile Include="TextField.cs" />
+    <Compile Include="ActionEvent.cs" />
+    <Compile Include="DetailFrame.cs" />
+    <Compile Include="WindowEvent.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
