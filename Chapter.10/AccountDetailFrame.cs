@@ -23,8 +23,7 @@
                 accountDescription += ": ";
 
                 accountDescription += "basic account";
-
-                _display.SetText(accountDescription);
+                SetDisplayText(accountDescription);
             }
         }
 
@@ -38,6 +37,11 @@
 		private string GetAccountSymbol()
 		{
 			return _detailDisplay.GetAccountSymbol();
+		}
+
+		private void SetDisplayText(string accountDescription)
+		{
+			_display.SetText(accountDescription);
 		}
 
         private string GetDetailText()
