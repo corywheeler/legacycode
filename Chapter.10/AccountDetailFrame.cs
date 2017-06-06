@@ -13,33 +13,33 @@
             PerformCommand(source);
         }
 
-        private void PerformCommand(string source)
-        {
-            if (source.Equals("project activity"))
-            {
-                SetDescription();
-                string accountDescription = GetAccountSymbol();
+		public void PerformCommand(string source)
+		{
+		    if (source.Equals("project activity"))
+		    {
+		        SetDescription();
+		        string accountDescription = GetAccountSymbol();
 
-                accountDescription += ": ";
+		        accountDescription += ": ";
 
-                accountDescription += "basic account";
-                SetDisplayText(accountDescription);
-            }
-        }
+		        accountDescription += "basic account";
+		        SetDisplayText(accountDescription);
+		    }
+		}
 
-		private void SetDescription()
+		protected virtual void SetDescription()
 		{
 		    _detailDisplay = new DetailFrame();
 		    _detailDisplay.SetDescription(GetDetailText() + " " + GetProjectionText());
 		    _detailDisplay.Show();
 		}
 
-		private string GetAccountSymbol()
+		protected virtual string GetAccountSymbol()
 		{
 			return _detailDisplay.GetAccountSymbol();
 		}
 
-		private void SetDisplayText(string accountDescription)
+		protected virtual void SetDisplayText(string accountDescription)
 		{
 			_display.SetText(accountDescription);
 		}

@@ -64,6 +64,8 @@
     <Compile Include="Chapter.10\CCAImageTests.cs" />
     <Compile Include="Chapter.10\TestingCCAImage.cs" />
     <Compile Include="Chapter.10\KSRTests.cs" />
+    <Compile Include="Chapter.10\AccountDetailFrameTests.cs" />
+    <Compile Include="Chapter.10\TestingAccountDetailFrame.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
