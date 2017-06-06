@@ -36,6 +36,14 @@
     <Compile Include="HttpPostedFile.cs" />
     <Compile Include="KSR.cs" />
     <Compile Include="NameObjectCollectionBase.cs" />
+    <Compile Include="AccountDetailFrame.cs" />
+    <Compile Include="Frame.cs" />
+    <Compile Include="ActionListener.cs" />
+    <Compile Include="WindowListener.cs" />
+    <Compile Include="ActionEvent.cs" />
+    <Compile Include="WindowEvent.cs" />
+    <Compile Include="TextField.cs" />
+    <Compile Include="DetailFrame.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
