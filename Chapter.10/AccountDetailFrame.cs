@@ -9,6 +9,11 @@
         public void ActionPerformed(ActionEvent actionEvent)
         {
             string source = actionEvent.GetActionCommand();
+            PerformCommand(source);
+        }
+
+        private void PerformCommand(string source)
+        {
             if (source.Equals("project activity"))
             {
                 DetailFrame detailDisplay = new DetailFrame();
