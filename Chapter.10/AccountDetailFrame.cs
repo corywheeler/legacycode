@@ -17,12 +17,8 @@
         {
             if (source.Equals("project activity"))
             {
-                _detailDisplay = new DetailFrame();
-                _detailDisplay.SetDescription(GetDetailText() + " " + GetProjectionText());
-
-                _detailDisplay.Show();
-
-                string accountDescription = _detailDisplay.GetAccountSymbol();
+                SetDescription();
+                string accountDescription = GetAccountSymbol();
 
                 accountDescription += ": ";
 
@@ -31,6 +27,18 @@
                 _display.SetText(accountDescription);
             }
         }
+
+		private void SetDescription()
+		{
+		    _detailDisplay = new DetailFrame();
+		    _detailDisplay.SetDescription(GetDetailText() + " " + GetProjectionText());
+		    _detailDisplay.Show();
+		}
+
+		private string GetAccountSymbol()
+		{
+			return _detailDisplay.GetAccountSymbol();
+		}
 
         private string GetDetailText()
         {
