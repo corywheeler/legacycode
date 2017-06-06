@@ -2,7 +2,8 @@
 {
     public class AccountDetailFrame : Frame, ActionListener, WindowListener
     {
-        private TextField _display = new TextField(10);
+		DetailFrame _detailDisplay;
+		private TextField _display = new TextField(10);
 
         public AccountDetailFrame() { }
 
@@ -16,12 +17,12 @@
         {
             if (source.Equals("project activity"))
             {
-                DetailFrame detailDisplay = new DetailFrame();
-                detailDisplay.SetDescription(GetDetailText() + " " + GetProjectionText());
+                _detailDisplay = new DetailFrame();
+                _detailDisplay.SetDescription(GetDetailText() + " " + GetProjectionText());
 
-                detailDisplay.Show();
+                _detailDisplay.Show();
 
-                string accountDescription = detailDisplay.GetAccountSymbol();
+                string accountDescription = _detailDisplay.GetAccountSymbol();
 
                 accountDescription += ": ";
 
