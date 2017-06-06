@@ -3,7 +3,7 @@
     public class DetailFrame
     {
         private string _description;
-        private string _accountSymbol = "SYM";
+        private string _accountSymbol = string.Empty;
 
         public DetailFrame()
         {
