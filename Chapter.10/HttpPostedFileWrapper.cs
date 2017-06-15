@@ -12,8 +12,8 @@ namespace Chapter._10
             this._file = file;
         }
 
-        public string FileName { get => _file.FileName; }
-        public int ContentLength { get => _file.ContentLength; }
-        public Stream InputStream { get => _file.InputStream; }
+        public string FileName { get { return _file.FileName; } }
+        public int ContentLength { get { return _file.ContentLength; } }
+        public Stream InputStream { get { return _file.InputStream; } }
     }
 }
